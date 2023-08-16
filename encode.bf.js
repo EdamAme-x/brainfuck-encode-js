@@ -1,0 +1,1 @@
+function encodeBF(r){for(var o,a=[],$="",f=0;f<r.length;f++){a[f]=r.charCodeAt(f);var n=[9,Math.floor(Math.abs(o=a[f]-(f?a[f-1]:0))/9),Math.floor(Math.abs(o)%9)];0!=n[1]&&f>0&&($+="<"),$+=function(r,o){for(var a="",$=["[>","<-]>","."],f=["+",o,o],n=0==r[1]?2:0;n<3;n++){for(var t=0;t<r[n];t++)a+=f[n];a+=$[n]}return a}(n,o<0?"-":"+")}return $};
